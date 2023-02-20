@@ -1,0 +1,21 @@
+.company-name{
+    font-size: 16px;
+    margin-top: 0.3rem;
+    font-weight: 600;
+    letter-spacing: .6px;
+    color: var(--color-secondary);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  ;
+}
+.product-name{
+    color: purple;
+    font-weight: 600;
+}
+.product-name-2{
+    color: red;
+    font-weight: 600;
+}
+.logo{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
