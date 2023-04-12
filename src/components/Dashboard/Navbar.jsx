@@ -22,6 +22,7 @@ const Search = styled("div")(({ theme }) => ({
     padding: "0 10px",
     borderRadius: theme.shape.borderRadius,
     width: "40%",
+    // text: "white"
 }));
 
 const Icons = styled(Box)(({ theme }) => ({
@@ -94,7 +95,7 @@ const Navbar = () => {
                 <MenuItem >Profile</MenuItem>
                 <MenuItem >Chat</MenuItem>
                 <MenuItem >Edit account</MenuItem>
-                <MenuItem >Logout</MenuItem>
+               {/* <MenuItem> <Button>Forget</Button></MenuItem> */}
             </Menu>
         </AppBar>
     );

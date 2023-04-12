@@ -1,6 +1,10 @@
 import React from "react";
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from "@mui/material";
-import { AccountBox, Brightness2, Error, Mail, Pages, PeopleAlt, ReduceCapacity, Settings } from "@mui/icons-material";
+import { Brightness2, Error, Logout, Mail, Pages, PeopleAlt, ReduceCapacity, Settings } from "@mui/icons-material";
+import Logout from "../../Pages/Logout";
+import HomeIcon from '@mui/icons-material/Home';
+// import { Button } from "bootstrap";
+
 
 
 
@@ -11,11 +15,11 @@ const Sidebar = ({ mode, setMode }) => {
             <Box position="fixed">
                 <List>
                     <ListItem disablePadding>
-                        <ListItemButton components="a" href="#simple-list">
+                        <ListItemButton components="a" href="#home">
                             <ListItemIcon>
-                                <AccountBox />
+                                <HomeIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Profile" />
+                            <ListItemText primary="Home" />
                         </ListItemButton>
                     </ListItem>
 
@@ -28,7 +32,7 @@ const Sidebar = ({ mode, setMode }) => {
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                        <ListItemButton components="a" href="#simple-list">
+                        <ListItemButton components="a" href="#pages">
                             <ListItemIcon>
                                 <Pages />
                             </ListItemIcon>
@@ -36,7 +40,7 @@ const Sidebar = ({ mode, setMode }) => {
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                        <ListItemButton components="a" href="#simple-list">
+                        <ListItemButton components="a" href="#groups">
                             <ListItemIcon>
                                 <ReduceCapacity />
                             </ListItemIcon>
@@ -45,7 +49,7 @@ const Sidebar = ({ mode, setMode }) => {
                     </ListItem>
 
                     <ListItem disablePadding>
-                        <ListItemButton components="a" href="#simple-list">
+                        <ListItemButton components="a" href="#friends">
                             <ListItemIcon>
                                 <PeopleAlt />
                             </ListItemIcon>
@@ -53,7 +57,7 @@ const Sidebar = ({ mode, setMode }) => {
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                        <ListItemButton components="a" href="#simple-list">
+                        <ListItemButton components="a" href="#settings">
                             <ListItemIcon>
                                 <Settings />
                             </ListItemIcon>
@@ -61,7 +65,7 @@ const Sidebar = ({ mode, setMode }) => {
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                        <ListItemButton components="a" href="#simple-list">
+                        <ListItemButton components="a" href="#about">
                             <ListItemIcon>
                                 <Error />
                             </ListItemIcon>
@@ -69,7 +73,7 @@ const Sidebar = ({ mode, setMode }) => {
                         </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                        <ListItemButton components="a" href="#simple-list">
+                        <ListItemButton components="a" href="#theme">
                             <ListItemIcon>
                                 <Brightness2 />
                             </ListItemIcon>
@@ -77,8 +81,20 @@ const Sidebar = ({ mode, setMode }) => {
                         </ListItemButton>
                     </ListItem>
 
+                    {/* <ListItem disablePadding>
+                        <ListItemButton components={<Logout/>} href="#about">
+                            <ListItemIcon>
+                                <Logout /> 
+                            </ListItemIcon>
+                            <ListItemText primary="Log out" />
+                        </ListItemButton>
+                    </ListItem> */}
+                    <Logout />
+
                 </List>
+              
             </Box>
+            
         </Box>
     );
 }
